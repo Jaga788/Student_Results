@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Management System</title>
+    <style>
+        /* Full-page background */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('pimage.jpg') no-repeat center center/cover; /* Replace with your image */
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navbar */
+        .navbar {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+        }
+
+        /* Heading */
+        .navbar h1 {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Buttons */
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 10px 18px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        /* Register Button */
+        .register-btn {
+            background: linear-gradient(45deg, #4CAF50, #2E8B57);
+            color: white;
+        }
+
+        .register-btn:hover {
+            background: linear-gradient(45deg, #2E8B57, #4CAF50);
+            transform: scale(1.05);
+        }
+
+        /* Login Button */
+        .login-btn {
+            background: linear-gradient(45deg, #008CBA, #005F73);
+            color: white;
+        }
+
+        .login-btn:hover {
+            background: linear-gradient(45deg, #005F73, #008CBA);
+            transform: scale(1.05);
+        }
+
+        /* Centered Main Content */
+        .content {
+            margin-top: 150px;
+            text-align: center;
+            color: white;
+        }
+
+        .content h2 {
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .content p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+            .nav-buttons {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <h1>Student Result Management System</h1>
+        <div class="nav-buttons">
+            <button class="btn register-btn" onclick="location.href='registration.html'">Register</button>
+            <button class="btn login-btn" onclick="location.href='login.html'">Login</button>
+        </div>
+    </div>
+
+    <!-- Centered Content -->
+    <div class="content">
+        <h2>Welcome To The Student Result Management System</h2>
+        <p>View The Student Results Easily And Efficiently.</p>
+    </div>
+
+</body>
+</html>
+
